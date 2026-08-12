@@ -74,28 +74,4 @@ window.TEXTES = [
     `,
   },
 
-  /* ------------------------------------------------------------------
-     EXEMPLE 2 — un écrit qui n'appartient à aucun des 4 personnages
-     ------------------------------------------------------------------ */
-  {
-    id: "exemple-notes-sur-camlaan",
-    titre: "Notes sur les brumes de Camlaan",
-    epigraphe: "",
-    personnage: "Autre",
-    date: "carnet personnel",
-    resume: "Quelques notes de worldbuilding sur le phénomène des brumes automnales qui recouvrent les étangs du domaine de Camlaan, et leur place dans les superstitions locales.",
-    image: "",
-    contenu: `
-      <p>Chaque automne, les étangs disséminés sur les terres de Camlaan produisent une brume basse, presque immobile, qui s'attarde jusqu'au milieu de la matinée.</p>
-      <p>Les Camelois racontent qu'elle porte la mémoire des chevaux perdus — ceux qu'on n'a jamais retrouvés après une charge, une fuite, ou un hiver trop rude.</p>
-      <p><em>À développer : lien possible avec le culte d'Erya et les pierres de la lande.</em></p>
-    `,
-  },
-
-  /* ------------------------------------------------------------------
-     Ajoute tes propres textes ci-dessous, en copiant la structure
-     ci-dessus. N'oublie pas la virgule à la fin de chaque bloc,
-     sauf pour le tout dernier de la liste.
-     ------------------------------------------------------------------ */
-
 ];
