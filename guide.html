@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guide — Scriptorium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">❦</span>
+    Scriptorium
+    <small>The&nbsp;Empyrean</small>
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">Bibliothèque</a>
+    <a href="guide.html" class="active">Guide</a>
+  </nav>
+</header>
+
+<section class="hero" style="padding-bottom:50px;">
+  <div class="hero-inner">
+    <div class="hero-kicker">Mode d'emploi</div>
+    <h1 style="font-size:clamp(32px,5vw,48px);">Ajouter un texte</h1>
+    <p class="hero-lede">Tout le contenu du site vit dans un seul fichier : <code style="font-family:var(--font-ui); background:var(--bg-card); border:1px solid var(--border); padding:2px 8px; border-radius:3px; color:var(--accent-bright);">data/textes.js</code>. Pas de base de données, pas d'interface d'administration : on y écrit directement, comme dans un carnet.</p>
+  </div>
+</section>
+
+<main class="guide-body">
+
+  <h2><span class="num">I.</span> Ouvrir le bon fichier</h2>
+  <p>Dans le dossier du site, ouvre <code>data/textes.js</code> avec un éditeur de texte simple (Bloc-notes, TextEdit, ou idéalement VS Code / Sublime Text si tu en as un). C'est un fichier JavaScript, mais pas d'inquiétude : il n'y a rien à programmer, seulement une liste à compléter.</p>
+
+  <h2><span class="num">II.</span> Copier un exemple</h2>
+  <p>Le fichier contient déjà deux textes d'exemple. Le plus simple est de copier l'un des blocs entre accolades <code>{ ... }</code>, de le coller juste avant le commentaire final, et de modifier chaque valeur.</p>
+
+  <div class="code-block"><pre><span class="cm">// Un bloc = un texte</span>
+{
+  id: <span class="str">"mon-nouveau-texte"</span>,       <span class="cm">// unique, sans espace ni accent</span>
+  titre: <span class="str">"Le titre de mon texte"</span>,
+  epigraphe: <span class="str">"Une citation courte, ou laisse vide."</span>,
+  personnage: <span class="str">"Mordren"</span>,          <span class="cm">// voir les 5 valeurs possibles ci-dessous</span>
+  date: <span class="str">"an 632"</span>,
+  resume: <span class="str">"Un résumé de deux à trois lignes."</span>,
+  image: <span class="str">""</span>,                       <span class="cm">// URL d'image, ou vide</span>
+  contenu: <span class="key">`</span>
+    &lt;p&gt;Premier paragraphe du texte.&lt;/p&gt;
+    &lt;p&gt;Deuxième paragraphe.&lt;/p&gt;
+  <span class="key">`</span>,
+},</pre></div>
+
+  <div class="callout"><strong>Astuce —</strong> n'oublie pas la virgule <code>,</code> après l'accolade fermante <code>}</code> de chaque texte, sauf le tout dernier de la liste. C'est la seule règle de syntaxe à retenir.</div>
+
+  <h2><span class="num">III.</span> Écrire le contenu</h2>
+  <p>Le champ <code>contenu</code> accepte du HTML simple. Il suffit d'entourer chaque paragraphe de <code>&lt;p&gt;</code> et <code>&lt;/p&gt;</code>. Quelques balises utiles, à réutiliser telles quelles :</p>
+
+  <div class="code-block"><pre>&lt;p&gt;Un paragraphe normal.&lt;/p&gt;
+
+&lt;p&gt;Un mot en &lt;em&gt;italique&lt;/em&gt;, un autre en &lt;strong&gt;gras&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;Une citation mise en valeur.&lt;/blockquote&gt;
+
+&lt;hr&gt;  <span class="cm">// un séparateur orné, pour marquer une coupure</span>
+
+&lt;h2&gt;Un sous-titre&lt;/h2&gt;  <span class="cm">// pour un texte en plusieurs parties</span></pre></div>
+
+  <h2><span class="num">IV.</span> La catégorie</h2>
+  <p>Le champ <code>personnage</code> sert aussi de filtre dans la bibliothèque. Il n'accepte que ces 5 valeurs exactes (respecter la majuscule) :</p>
+  <div class="code-block"><pre><span class="str">"Alba"</span>
+<span class="str">"Muirenn"</span>
+<span class="str">"Mordren"</span>
+<span class="str">"Marcus"</span>
+<span class="str">"Autre"</span>   <span class="cm">// pour tout écrit qui n'appartient à aucun des 4 personnages</span></pre></div>
+  <div class="callout"><strong>Attention —</strong> une autre valeur (ex. <code>"Mordren Reiter"</code> ou <code>"Camlaan"</code>) ne sera pas reconnue par les filtres et le texte n'apparaîtra dans aucune catégorie sélectionnée.</div>
+
+  <h2><span class="num">V.</span> Ajouter des images</h2>
+  <p>Le site prévoit deux emplacements pour les images. Dans les deux cas, il faut d'abord déposer le fichier image dans le dossier <code>images/</code> à la racine du site (à côté de <code>index.html</code>).</p>
+
+  <p><strong style="color:var(--accent-bright); font-weight:600;">1. L'image bandeau</strong> — celle qui illustre la carte dans la bibliothèque et qui s'affiche en haut du texte une fois ouvert. Elle se règle avec le champ <code>image</code> du texte, dans <code>data/textes.js</code> :</p>
+
+  <div class="code-block"><pre>image: <span class="str">"images/alba-eglise.jpg"</span>,</pre></div>
+
+  <p>Si ce champ reste vide (<code>""</code>), une simple initiale décorative est affichée à la place — ce n'est donc jamais bloquant si tu n'as pas encore d'image.</p>
+
+  <p><strong style="color:var(--accent-bright); font-weight:600;">2. Les images dans le corps du texte</strong> — pour illustrer un passage précis. Il suffit d'ajouter une balise <code>&lt;img&gt;</code> directement dans le champ <code>contenu</code>, au même niveau que les <code>&lt;p&gt;</code>, à l'endroit exact où tu veux qu'elle apparaisse :</p>
+
+  <div class="code-block"><pre>&lt;p&gt;Un premier paragraphe.&lt;/p&gt;
+
+&lt;img src=<span class="str">"images/alba-eglise.jpg"</span> alt=<span class="str">""</span>&gt;
+&lt;p class=<span class="str">"img-caption"</span>&gt;Une légende facultative, sous l'image.&lt;/p&gt;
+
+&lt;p&gt;Le paragraphe qui suit.&lt;/p&gt;</pre></div>
+
+  <div class="callout"><strong>À retenir —</strong> le chemin <code>images/nom-du-fichier.jpg</code> doit correspondre exactement au nom du fichier déposé dans le dossier (majuscules, accents et espaces comptent — mieux vaut les éviter dans les noms de fichiers). Formats recommandés : <code>.jpg</code> ou <code>.png</code>, idéalement compressés pour rester légers.</div>
+
+  <h2><span class="num">VI.</span> Publier</h2>
+  <p>Une fois le fichier enregistré, ouvre simplement <code>index.html</code> dans un navigateur pour vérifier le rendu. Pour le mettre en ligne comme les autres fiches (sur GitHub Pages), il suffit d'envoyer l'ensemble du dossier dans un dépôt GitHub, exactement comme pour les fiches de personnage existantes.</p>
+
+  <div class="callout"><strong>Rien d'autre à toucher —</strong> les pages <code>index.html</code>, <code>lire.html</code> et le style se mettent à jour automatiquement à partir de <code>data/textes.js</code>. Il n'y a jamais besoin de créer une nouvelle page pour un nouveau texte.</div>
+
+</main>
+
+<footer class="site-footer">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">❦</span>
+    Scriptorium
+  </a>
+  <p class="foot-quote">« Ce que la mémoire oublie, l'encre le retient. »</p>
+  <p class="foot-credit">Univers The Empyrean — Archives personnelles</p>
+</footer>
+
+</body>
+</html>

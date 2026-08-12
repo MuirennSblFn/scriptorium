@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scriptorium — Bibliothèque d'écrits</title>
+<meta name="description" content="Archives, textes et écrits libres de l'univers The Empyrean.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">❦</span>
+    Scriptorium
+    <small>The&nbsp;Empyrean</small>
+  </a>
+  <nav class="site-nav">
+    <a href="index.html" class="active">Bibliothèque</a>
+    <a href="guide.html">Guide</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">Archives personnelles</div>
+    <h1>Scriptorium</h1>
+    <p class="hero-epigraph">Toutes choses a une fin.</p>
+    <p class="hero-lede">Un lieu pour rassembler les textes écrits au fil du jeu de rôle — scènes de personnages, écrits libres, fragments de worldbuilding — classés par personnage.</p>
+  </div>
+</section>
+
+<div class="ornament"><span>Textes</span></div>
+
+<main class="section">
+  <div class="section-head">
+    <h2><span class="num">I.</span> La bibliothèque</h2>
+    <span class="section-note" id="result-count"></span>
+  </div>
+
+  <div class="filters">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="text" id="search-input" placeholder="Rechercher un titre, un personnage…">
+    </div>
+    <div id="tag-filters" style="display:flex; flex-wrap:wrap; gap:10px;"></div>
+  </div>
+
+  <div class="text-grid" id="text-grid"></div>
+</main>
+
+<footer class="site-footer">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">❦</span>
+    Scriptorium
+  </a>
+  <p class="foot-quote">« Toutes choses a une fin. »</p>
+  <p class="foot-credit">Univers The Empyrean — Archives personnelles</p>
+</footer>
+
+<script src="data/textes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
