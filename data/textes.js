@@ -99,7 +99,7 @@ window.TEXTES = [
 
     // Image bandeau (facultative). Laisser vide ("") si tu n'en as pas :
     // une simple initiale élégante sera affichée à la place.
-    image: "images/deathmuirenn.jpg",
+    image: "images/muirenndeath.jpg",
 
     // Corps du texte. S'écrit en HTML simple : un paragraphe = une
     // ligne <p>...</p>. Voir guide.html pour la liste complète des
