@@ -74,4 +74,63 @@ window.TEXTES = [
     `,
   },
 
+  /* ------------------------------------------------------------------
+     EXEMPLE 1 — un texte lié à un personnage
+     Duplique ce bloc { ... } pour créer une nouvelle entrée.
+     ------------------------------------------------------------------ */
+  {
+    // Identifiant unique, sans espace ni accent (sert dans l'URL).
+    id: "mort-muirenn",
+
+    // Titre affiché en grand.
+    titre: "Souvenirs",
+
+    // Petite citation en italique, affichée sous le titre (facultatif).
+    epigraphe: "And I wondered if a memory is something you have or something you've lost...",
+
+    // Catégorie : "Alba", "Muirenn", "Mordren", "Marcus" ou "Autre".
+    personnage: "Muirenn",
+
+    // Date affichée (peut être une date in-universe ou réelle).
+    date: "Au 19/08/2026",
+
+    // Résumé court affiché sur la carte, dans la bibliothèque.
+    resume: "Il a assez danser : il faut se reposer maintenant.",
+
+    // Image bandeau (facultative). Laisser vide ("") si tu n'en as pas :
+    // une simple initiale élégante sera affichée à la place.
+    image: "images/deathmuirenn.jpg",
+
+    // Corps du texte. S'écrit en HTML simple : un paragraphe = une
+    // ligne <p>...</p>. Voir guide.html pour la liste complète des
+    // balises utilisables (italique, citation, séparateur...).
+    contenu: `<p>Muirenn avait connu la chaleur des tavernes, la beauté des fêtes de villages, des soirées de grandes villes, des bals populaires et de jolies réceptions. Il avait arpenté mille lieux de festivités en dansant et en chantant, sous son masque de ménestrel, troubadour audacieux parfois impudique et parfois simplement maladroit. Il avait ressenti la force des chants entonnés en chœur, l'ivresse de la boisson qui coulait dans les gorges, les effusions d'affections dues à l'alcool. L'odeur des festins, le parfum amer mais libérateur des drogues.</p>
+<p>Du haut de sa vingtaine désormais passée, il avait des souvenirs par milliers. Des fêtes, des évènements, des choses de bardes, mais aussi des personnes et des noms. Des souvenirs de ce qu'il avait décidé de faire de sa vie : un sacerdoce athéiste, avec pour seule pensée fondatrice un naïf pacifisme. Toute vie est sacrée. Il s'était engagé sur le terrible sentier des Cavaliers de Basgiath avec cette seule idée en tête, faire triompher les valeurs de la non-violence au-dessus de tout.</p>
+<p>Le pauvre troubadour avait alors découvert que si l'on pouvait chanter pour de multiples occasions, on pouvait aussi tuer pour à peu près autant de raisons. Il avait vu des meurtres rituels et religieux sur une île lointaine, des meurtres et crimes passionnels, des assassinats préventifs et réflexes. Des massacres par envie, des tueries pour le Bien, toujours pour l'Idéal. Il avait vu la Paix se faire frapper au corps, battre par le Marteau de la Guerre, jusqu'à devenir une arme de plus au nom du sang.</p>
+<p>Son innocence avait été brisée, les morceaux de celle-ci rassemblés en un charmant bouquet, qu'on l'avait contraint à respirer à pleins nez tout au long de sa formation de bon soldat. Et si être lié à une cadette d'un an son aînée, respectable et respectée, l'avait préservé de plus de problèmes, c'était bien l'une des seules raisons qui lui avait permis de ne pas perdre tout espoir : autour de lui se trouvait d'autres personnes tout aussi indignées que lui, tout aussi horrifiées et terrifiées par l'idée de prendre des vies comme on fauche le blé.</p>
+<p>Il revoyait les visages et les noms. Alva, Aelwynn, Kyara. Certains l'avaient soutenu sans partager sa pensée : Leysa, sa liée.</p>
+<p>Il y avait aussi Corraich, sa dragonne. Conseillère, alliée, guide sage. Il aurait dû l'écouter plus souvent. Si elle ne partageait pas son pacifisme, la lassitude des combats l'avait menée sur le chemin de la paix.</p>
+<p>Tant de souvenirs. Des personnes, des moments. Il y avait sa famille aussi. Lorsqu'il s'était levé comme pour la première fois, il y a maintenant plus de cinq ans, sur le rivage du petit village de Sablefin, Muirenn n'avait aucun autre souvenir que celui de son nom. Une main céleste, invisible et omnipotente, semblait pouvoir tirer le voile sur cette amnésie, et s'amusait à lui montrer parfois de douces images de son passé, visions oniriques que le garçon chérissait plus que tout.</p>
+<p>Mahidevran, Mahin, Mirihmah, Shirin. Trois aînées et une cadette. Ses sœurs, sa famille, son cœur, qui reposait quelque part, si le Feu ne les lui avait pas déjà prises. Il les aimait sans les connaitre, comme on aime une peinture, une statue, une vallée ou l'océan. Autant pour leur nature profonde et inconnue que pour ce qu'il voyait en elles. Son désir de vivre, et de les retrouver.</p>
+<p>Ce désir était la seule chose qui l'empêchait de lâcher sa lance.</p>
+<p>Devant lui, un autre être humain. Il avait les yeux noirs, et le teint couleur caramel. Muirenn adorait ça, le caramel. Il en mangeait souvent lors des fêtes de Solthéa, dans sa vie d'avant. La vie d'avant, c'était celle qui s'étendait entre son réveil sur la plage, il y a des années, et maintenant. Maintenant, c'était ce moment, où ce type à la peau hâlée et aux yeux charbons, aussi effrayé que lui, pointait une arbalète sur son torse.</p>
+<p>Une bâtisse en ruine, dehors un monde de feu et de cendre. La frontière poroméenne n'est qu'à quelques lieues. Muirenn ne sait pas s'il est seul. Il a cru entendre Alva hurler son nom, alors que les scorpions abattaient un dragon, les forces d'invasion mêlées à des insurgés navarrois lançant l'assaut sur leur avant-poste désorganisé, pris par surprise.</p>
+<p>Tout était si confus dans ses souvenirs ! Il pouvait se remémorer le visage de Shirin avec une précision folle, mais se révélait incapable de comprendre ce qui l'avait amené dans cette guérite, avec sa lance, face à ce qui paraissait être un soldat ennemi. Ce qu'il savait par contre, c'est que le temps semblait s'être dilaté, et que tout se déroulait très vite dans sa petite tête.</p>
+<p>Corraich y hurlait, quelque part au fond de son crâne. La voix de Leysa s'y trouvait aussi, dans sa caboche. Rigolo ce mot, caboche. Pourquoi faisaient-elles autant de bruit ? Il était si bien avec ses souvenirs… Ses souvenirs d'un monde de paix, de ses sœurs, de la violence qu'il voulait laisser derrière lui.</p>
+<p>Le rivage de Sablefin. Le tabernacle de Séraphis à Ashenvale. La beauté du monde. Basgiath. Le Parapet et sa promesse de paix. Le Gant sans pantalon. Alva sur les remparts. Leysa et Reis près du Vale. Ses sœurs. Le Feu. Malekys, Oaly, Kyara, la danse et les agrumes. Ses souvenirs, si doux, si confortables. Un monde où se battre valait encore le coup.</p>
+<p>Voilà qu'ils s'échappaient. Tout se teintait de gris. Pourquoi ? Qu'est-ce qui gâchait ce moment ? Était-ce sa lance, qu'il serrait si fort, ou bien l'odeur des cendres et de l'incendie ? Pourquoi ces souvenirs le fuyaient ? Pourquoi cela devenait si dur de réfléchir ?</p>
+<p>Ça y est, il se souvenait ! C'est parce qu'il devait dire au type de baisser son arme, qu'il ne lui voulait pas de mal, qu'il s'appelait Muirenn, et qu'il ne lui ferait aucun mal.</p>
+<p>Mais ne venait-il pas de le faire ? Allez, souviens-toi Muirenn…</p>
+<p>Si, il avait dit tout ça ! Et l'autre, qu'avait-il répondu ? Il lui avait dit son nom non ?</p>
+<p>Non.</p>
+<p>Le regard de Muirenn tomba sur son torse, attiré par le bruit de sa lance tombant au sol. Et ce qu'il vit expliqua soudain pourquoi il l'avait lâchée, et pourquoi il était si dur de réfléchir, si dur de se souvenir.</p>
+<p>Le carreau dépassait de sa poitrine, fiché en plein cœur. Crachotant un caillot de sang, il bascula sur ses genoux. Il aurait dû se sentir transpercé de part en part, embrasé par l'horreur et la douleur, il aurait dû sentir la vie le quitter avec ce sang vermeil.</p>
+<p>Au lieu de ça, Muirenn regretta de ne même plus avoir la force de siffler. Ce qu'il sentait partir avec horreur, c'était les souvenirs qu'il avait tant chéris.</p>
+<p>Le visage de ses sœurs s'estompa, la voix d'Alva lui devint inconnue, Leysa ne fut bientôt plus qu'un nom, Corraich à peine une suite de syllabes.</p>
+<p>Et même la paix pour laquelle il s'était tant battu perdit son sens, alors que ses yeux se vidaient. Il n'était personne, n'avait été personne, ne serait jamais rien. Et alors qu'il réalisait ça, son regard fixé pour l'éternité sur le plafond de la minable guérite en bois, allongé sur le dos, l'homme qui l'avait abattu l'enjamba, ignorant son nom, ignorant qui il était.</p>
+<p>Il venait d'abattre un Cavalier de plus, et cherchait déjà le prochain.</p>
+
+    `,
+  },
+
 ];
