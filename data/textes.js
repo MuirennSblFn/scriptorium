@@ -121,7 +121,7 @@ window.TEXTES = [
 <p>Voilà qu'ils s'échappaient. Tout se teintait de gris. Pourquoi ? Qu'est-ce qui gâchait ce moment ? Était-ce sa lance, qu'il serrait si fort, ou bien l'odeur des cendres et de l'incendie ? Pourquoi ces souvenirs le fuyaient ? Pourquoi cela devenait si dur de réfléchir ?</p>
 <p>Ça y est, il se souvenait ! C'est parce qu'il devait dire au type de baisser son arme, qu'il ne lui voulait pas de mal, qu'il s'appelait Muirenn, et qu'il ne lui ferait aucun mal.</p>
 <p>Mais ne venait-il pas de le faire ? Allez, souviens-toi Muirenn…</p>
-<p>Si, il avait dit tout ça ! Et l'autre, qu'avait-il répondu ? Il lui avait dit son nom non ?</p>
+<p>Si, il avait dit tout ça ! Et l'autre, qu'avait-il répondu ? Il lui avait dit son nom n'est-ce pas ?</p>
 <p>Non.</p>
 <p>Le regard de Muirenn tomba sur son torse, attiré par le bruit de sa lance tombant au sol. Et ce qu'il vit expliqua soudain pourquoi il l'avait lâchée, et pourquoi il était si dur de réfléchir, si dur de se souvenir.</p>
 <p>Le carreau dépassait de sa poitrine, fiché en plein cœur. Crachotant un caillot de sang, il bascula sur ses genoux. Il aurait dû se sentir transpercé de part en part, embrasé par l'horreur et la douleur, il aurait dû sentir la vie le quitter avec ce sang vermeil.</p>
