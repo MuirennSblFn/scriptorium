@@ -95,7 +95,7 @@ window.TEXTES = [
     date: "Au 19/08/2026",
 
     // Résumé court affiché sur la carte, dans la bibliothèque.
-    resume: "Il a assez danser : il faut se reposer maintenant.",
+    resume: "Il a assez dansé : il faut se reposer maintenant.",
 
     // Image bandeau (facultative). Laisser vide ("") si tu n'en as pas :
     // une simple initiale élégante sera affichée à la place.
