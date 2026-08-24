@@ -133,4 +133,56 @@ window.TEXTES = [
     `,
   },
 
+    /* ------------------------------------------------------------------
+     EXEMPLE 1 — un texte lié à un personnage
+     Duplique ce bloc { ... } pour créer une nouvelle entrée.
+     ------------------------------------------------------------------ */
+  {
+    // Identifiant unique, sans espace ni accent (sert dans l'URL).
+    id: "amour-muirenn",
+
+    // Titre affiché en grand.
+    titre: "L'allée des Rossignols",
+
+    // Petite citation en italique, affichée sous le titre (facultatif).
+    epigraphe: "Stranger, you showed me it's true / I'm capable of loving someone the way I loved you",
+
+    // Catégorie : "Alba", "Muirenn", "Mordren", "Marcus" ou "Autre".
+    personnage: "Muirenn",
+
+    // Date affichée (peut être une date in-universe ou réelle).
+    date: "Au 25/08/2026",
+
+    // Résumé court affiché sur la carte, dans la bibliothèque.
+    resume: "Il n'aura jamais l'occasion de la lire.",
+
+    // Image bandeau (facultative). Laisser vide ("") si tu n'en as pas :
+    // une simple initiale élégante sera affichée à la place.
+    image: "images/muirennlove.jpg",
+
+    // Corps du texte. S'écrit en HTML simple : un paragraphe = une
+    // ligne <p>...</p>. Voir guide.html pour la liste complète des
+    // balises utilisables (italique, citation, séparateur...).
+    contenu: `<p>Lettre ouverte à celui qui se reconnaîtra.</p>
+<p>J'étais une fille de seize ans. Les fêtes d'Aegisara, à Ashenvale, sont souvent célébrées les dix jours durant, pour peu qu'un ou plusieurs mariages soient à célébrer. Cette année-là, c'était ma sœur aînée qui épousait un aspirant à l'infanterie, et un de mes cousins qui recevait la main d'une honnête lavandière, une voisine.</p>
+<p>Moi, je rêvais d'intégrer le quadrant des Guérisseurs. J'étais jeune, un peu naïve, sûrement. Souvent, quand je repense à toi, je suis heureuse que tu n'aies pas cherché à en profiter. Je voulais un monde avec moins de souffrance, où les blessures à panser seraient plus souvent celles du cœur et de l'âme que celles du corps. On s'est beaucoup moqué de moi à l'époque, pour ça. Pas toi, jamais.</p>
+<p>J'habitais allée du Rossignol. Nous avions pu louer la petite cour en bas pour tenir les deux repas de mariage. Au printemps, les pots accueillent tout un tas d'amarantes, quelques brins de muguet aussi, et des jacinthes. Maman aimait beaucoup les jacinthes. Je me souviens aussi de la première fois où l'on s'est vus : tu es revenu avec papa, qui t'avait rencontré devant Le Tambour Rafistolé, l'auberge à l'angle de l'allée et de la rue des Cendres.</p>
+<p>Il t'avait trouvé en train de jouer du luth pour quelques piécettes, et c'était dit que ce serait à la fois une pieuse chose et une occasion d'avoir un peu de musique que de t'embaucher pour animer les festivités. Je me rappelle t'avoir trouvé très beau, malgré ta tenue dépenaillée et l'odeur de sel qui collait à ta peau hâlée. Plus tard, sur le toit je crois, tu m'avais expliqué : tu venais d'un petit village côtier de la province, et tu n'avais pas assez d'argent en poche pour présenter mieux que ça.</p>
+<p>Toujours est-il que je t'ai trouvé beau. Tu étais drôle quand tu t'essayais à jongler, quand tu racontais à mes petits neveux comment tu avais vaincu avec une cuillère quatre bandits en armes. Je t'ai trouvé attachant, avec ta maladresse, qui elle-même s'emmêlait avec ta volonté de bien faire ; maman m'a demandé de t'empêcher d'approcher la vaisselle. Elle ne tenait pas à ce que tu en casses plus. Elle a bien fait, je n'aurais sûrement pas trouvé le courage de t'adresser la parole sinon !</p>
+<p>J'avais déjà embrassé Gabriel, l'an dernier, en été. J'étais partie aider ses parents à vendanger un petit bout de terrain sur lequel ils travaillaient à la haute saison. Ça avait été bref, et plus par curiosité qu'autre chose. Pour dire que je l'avais fait, en somme. D'ailleurs, il n'avait pas été très charmant avec moi par la suite, préférant m'ignorer et m'éviter, marmonnant avec ses copains quand il me voyait de loin. Je sais ce qu'ils ont dû se dire. Je ne regrette pas d'avoir mis une claque à sa main baladeuse, alors qu'il aurait dû s'occuper de mes lèvres.</p>
+<p>En tout cas, ça ne m'avait pas préparée le moins du monde à ta vue, ta rencontre. On dit que seuls les dragons savent cracher du feu : si ce qu'ils ressentent dans leur ventre ressemble aux frissons que tu as provoqués chez moi, je pense que j'aurais pu accéder à leur domaine et prouver être des leurs sans problème.</p>
+<p>Je ne pourrais pas dire, même aujourd'hui, si tu l'as su, si tu t'en es aperçu, ou bien si ta curiosité des autres, ta gentillesse, si tout ça était purement désintéressé. Mais comme je l'ai déjà dit, de toute manière tu n'en as pas profité.</p>
+<p>Le mariage fut beau. Tu avais même pu t'habiller dans la coutume, pour l'occasion. Ton écharpe rose t'allait très bien. J'espère que tu l'as gardée, et que tu la portes encore aujourd'hui. Tu as beaucoup chanté, tant et plus. Après la cérémonie, pendant la marche nuptiale, pendant le repas. Je me souviens t'avoir apporté à boire, et je me souviens que tu ralentissais ton jeu tant que j'étais là. Ma sœur n'arrêtait pas de me taquiner. Elle avait peut-être raison non ? Tu ralentissais pour m'inviter à rester un peu plus. Je ne l'ai pas fait, j'étais trop gênée d'être si près de toi, à te porter ton vin.</p>
+<p>Pourtant, les garçons ne me mettent pas dans cet état d'habitude : Lewis et Jan, en bas de l'allée, les fils du couvreur, m'appellent « la Foudre » : je frappe toujours d'un coup, j'éclate contre eux et leurs blagues salaces, leurs regards appuyés, leurs réflexions qui pincent et coupent. Maman me dit d'ignorer, ma sœur dit que je ne serai jamais bonne à marier.</p>
+<p>Mais toi, tu ralentissais ton luth, et tu ne pouvais me lâcher des yeux. Et si la Foudre est tombée ce soir-là, c'est sûr, rien d'autre que mon cœur je crois.</p>
+<p>Je n'arrive pas à me rappeler vraiment ce qu'on s'est dit. On a beaucoup parlé une fois les festivités tombées dans la boisson plus que dans la danse. Nous avons beaucoup discuté pourtant, sur ce toit. Tu n'as pas joué pour moi, je ne te l'ai pas demandé. Je t'ai expliqué ce que je voulais faire de ma vie, que je voulais savoir guérir, panser les plaies du monde. Tu m'as écoutée religieusement. Toi, tu avais mon âge. Tu partais pour le tabernacle de Séraphis. Ta peau hâlée se fondait dans l'obscurité, il n'y avait que tes mots pour m'aider à te situer. J'avais l'impression que tu étais partout à la fois. Je me rappelle avoir fermé les yeux tandis que tu m'expliquais la valeur des souvenirs, surtout ceux qu'on n'a plus. Tu les as comparés à une empreinte dans le sable : on ne connait des souvenirs disparus que la trace que laisse leur absence.</p>
+<p>Je crois que c'est moi qui t'ai embrassé. Tu n'as rien demandé, ni sous-entendu ; j'en avais envie, et tu ne me l'as pas refusé quand je te l'ai demandé.</p>
+<p>Puis tu m'as rendu mon baiser, signe d'une passion partagée. Et ce baiser avait une saveur, un goût particulier : celui du premier amour, celui qui dit « tu peux être aimé, tu peux aimer ». Qui signifie que tu aimes, et que tu aimeras. Ce baiser que je t'ai demandé, que tu m'as accordé, a scellé en moi la promesse d'un monde où l'amour est possible, où la guerre peut être reposée par deux âmes bien intentionnées sur un toit, à refaire le monde en regardant les étoiles.</p>
+<p>Nous avons passé la nuit ensemble. Au matin, nous avons échangé une dernière embrassade, qui avait un léger parfum de bière, et de larmes. J'étais triste de te voir partir, mais ça n'aurait pas pu marcher entre nous : tu étais trop libre, trop solaire : ça aurait été comme enfermer le soleil dans une jarre, et espérer le voir briller pour toujours. Je ne regrette rien. Ma vie d'avant n'avait pas connu la passion. Ma vie d'après sait la reconnaitre et l'apprécier, grâce à toi.</p>
+<p>Notre histoire n'aura jamais vraiment eu lieu hors de cette nuit, étranger, mais désormais, lorsque je reviens dans cette petite allée des Rossignols, voir les amarantes en fleurs éveille en moi un souvenir : je peux aimer et être aimée. Et leur parfum rappelle le tien, cette sueur et ce sel. Et quand cette ville entière ne sera plus qu'une ville fantôme, quand j'aurai tant aimé, et tant aurai été brisée, que je serai faite d'acier, repenser sous la pluie à cette allée suffira à me faire soupirer.</p>
+<p>Je ne sais pas ce que tu deviens, étranger. Merci d'avoir été.</p>
+
+    `,
+  },
+
 ];
