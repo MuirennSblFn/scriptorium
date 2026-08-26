@@ -49,7 +49,7 @@ window.TEXTES = [
     // une simple initiale élégante sera affichée à la place.
     image: "images/deathalba.jpg",
 
-    spotify: "https://open.spotify.com/intl-fr/track/010ALbbh5KlQ4fKWgSdhRd?si=b8db23cfc7154b84"
+    spotify: "https://open.spotify.com/intl-fr/track/010ALbbh5KlQ4fKWgSdhRd?si=b8db23cfc7154b84",
 
     // Corps du texte. S'écrit en HTML simple : un paragraphe = une
     // ligne <p>...</p>. Voir guide.html pour la liste complète des
@@ -108,7 +108,7 @@ window.TEXTES = [
     // une simple initiale élégante sera affichée à la place.
     image: "images/muirenndeath.jpg",
 
-    spotify: "https://open.spotify.com/intl-fr/track/4TIONK6tnZWlNl5HdKpWby?si=50b5e8ec603142f1"
+    spotify: "https://open.spotify.com/intl-fr/track/4TIONK6tnZWlNl5HdKpWby?si=50b5e8ec603142f1",
 
     // Corps du texte. S'écrit en HTML simple : un paragraphe = une
     // ligne <p>...</p>. Voir guide.html pour la liste complète des
@@ -169,7 +169,7 @@ window.TEXTES = [
     // une simple initiale élégante sera affichée à la place.
     image: "images/muirennlove.jpg",
 
-    spotify: "https://open.spotify.com/intl-fr/track/3Y7DFxcLoqN2IJWOKn9DN0?si=cd5718cdb6d04ae3"
+    spotify: "https://open.spotify.com/intl-fr/track/3Y7DFxcLoqN2IJWOKn9DN0?si=cd5718cdb6d04ae3",
 
     // Corps du texte. S'écrit en HTML simple : un paragraphe = une
     // ligne <p>...</p>. Voir guide.html pour la liste complète des
