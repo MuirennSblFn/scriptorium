@@ -36,15 +36,14 @@
   }
 
   // Transforme un lien Spotify (morceau, playlist ou album) en lien
-  // "embed" utilisable dans une iframe. Accepte aussi bien un lien
-  // classique (open.spotify.com/track/...) qu'un lien déjà en embed.
+  // "embed" utilisable dans une iframe. Accepte les liens classiques
+  // (open.spotify.com/track/...), les liens avec préfixe de langue
+  // (open.spotify.com/intl-fr/track/...) et les liens déjà en embed.
   function spotifyEmbedUrl(url) {
     if (!url) return "";
-    var clean = String(url).split("?")[0].trim();
-    if (clean.indexOf("/embed/") === -1) {
-      clean = clean.replace("open.spotify.com/", "open.spotify.com/embed/");
-    }
-    return clean;
+    var match = String(url).match(/open\.spotify\.com\/(?:embed\/)?(?:intl-[a-z]{2}\/)?(track|album|playlist|episode|show|artist)\/([a-zA-Z0-9]+)/i);
+    if (!match) return "";
+    return "https://open.spotify.com/embed/" + match[1] + "/" + match[2];
   }
 
   /* ------------------------------------------------------------------
