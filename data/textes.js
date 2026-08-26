@@ -13,6 +13,11 @@
    IMPORTANT — le champ "personnage" n'accepte que l'une de ces 5 valeurs
    exactes (respecter la majuscule) :
      "Alba" · "Muirenn" · "Mordren" · "Marcus" · "Autre"
+
+   Champ optionnel "spotify" — colle simplement le lien de partage d'un
+   morceau, d'une playlist ou d'un album Spotify (le lien "Partager > Copier
+   le lien du morceau" depuis l'app ou le site). Un lecteur s'affiche alors
+   automatiquement en haut du texte. Laisse vide ("") si tu n'en veux pas.
    ========================================================================== */
 
 window.TEXTES = [
@@ -43,6 +48,8 @@ window.TEXTES = [
     // Image bandeau (facultative). Laisser vide ("") si tu n'en as pas :
     // une simple initiale élégante sera affichée à la place.
     image: "images/deathalba.jpg",
+
+    spotify: "https://open.spotify.com/intl-fr/track/010ALbbh5KlQ4fKWgSdhRd?si=b8db23cfc7154b84"
 
     // Corps du texte. S'écrit en HTML simple : un paragraphe = une
     // ligne <p>...</p>. Voir guide.html pour la liste complète des
@@ -101,6 +108,8 @@ window.TEXTES = [
     // une simple initiale élégante sera affichée à la place.
     image: "images/muirenndeath.jpg",
 
+    spotify: "https://open.spotify.com/intl-fr/track/4TIONK6tnZWlNl5HdKpWby?si=50b5e8ec603142f1"
+
     // Corps du texte. S'écrit en HTML simple : un paragraphe = une
     // ligne <p>...</p>. Voir guide.html pour la liste complète des
     // balises utilisables (italique, citation, séparateur...).
@@ -154,11 +163,13 @@ window.TEXTES = [
     date: "Au 25/08/2026",
 
     // Résumé court affiché sur la carte, dans la bibliothèque.
-    resume: "Il n'aura jamais l'occasion de la lire.",
+    resume: "Un missive qu'il n'aura jamais l'occasion de lire.",
 
     // Image bandeau (facultative). Laisser vide ("") si tu n'en as pas :
     // une simple initiale élégante sera affichée à la place.
     image: "images/muirennlove.jpg",
+
+    spotify: "https://open.spotify.com/intl-fr/track/3Y7DFxcLoqN2IJWOKn9DN0?si=cd5718cdb6d04ae3"
 
     // Corps du texte. S'écrit en HTML simple : un paragraphe = une
     // ligne <p>...</p>. Voir guide.html pour la liste complète des

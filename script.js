@@ -35,6 +35,18 @@
     return (titre || "?").trim().charAt(0).toUpperCase();
   }
 
+  // Transforme un lien Spotify (morceau, playlist ou album) en lien
+  // "embed" utilisable dans une iframe. Accepte aussi bien un lien
+  // classique (open.spotify.com/track/...) qu'un lien déjà en embed.
+  function spotifyEmbedUrl(url) {
+    if (!url) return "";
+    var clean = String(url).split("?")[0].trim();
+    if (clean.indexOf("/embed/") === -1) {
+      clean = clean.replace("open.spotify.com/", "open.spotify.com/embed/");
+    }
+    return clean;
+  }
+
   /* ------------------------------------------------------------------
      Progress bar de lecture (utilisée sur lire.html)
      ------------------------------------------------------------------ */
@@ -190,6 +202,13 @@
       ? '<div class="reader-banner fade-in"><img src="' + escapeHtml(texte.image) + '" alt=""></div>'
       : "";
 
+    var audioHtml = texte.spotify
+      ? '<div class="reader-audio fade-in">' +
+          '<p class="reader-audio-label">En l\'écrivant, j\'écoutais</p>' +
+          '<iframe src="' + escapeHtml(spotifyEmbedUrl(texte.spotify)) + '" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' +
+        "</div>"
+      : "";
+
     var bodyHtml = '<article class="reader-body fade-in">' + texte.contenu + "</article>";
 
     var prevItem = TEXTES[index + 1]; // plus ancien
@@ -204,7 +223,7 @@
       : "<span></span>";
     footerHtml += "</div>";
 
-    root.innerHTML = headerHtml + bannerHtml + bodyHtml + footerHtml;
+    root.innerHTML = headerHtml + audioHtml + bannerHtml + bodyHtml + footerHtml;
   }
 
   document.addEventListener("DOMContentLoaded", function () {

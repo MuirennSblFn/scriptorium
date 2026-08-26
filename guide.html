@@ -98,7 +98,16 @@
 
   <div class="callout"><strong>À retenir —</strong> le chemin <code>images/nom-du-fichier.jpg</code> doit correspondre exactement au nom du fichier déposé dans le dossier (majuscules, accents et espaces comptent — mieux vaut les éviter dans les noms de fichiers). Formats recommandés : <code>.jpg</code> ou <code>.png</code>, idéalement compressés pour rester légers.</div>
 
-  <h2><span class="num">VI.</span> Publier</h2>
+  <h2><span class="num">VI.</span> Ajouter une bande-son</h2>
+  <p>Tu peux relier un texte à un morceau, une playlist ou un album Spotify — ce que tu écoutais en l'écrivant, par exemple. Un lecteur s'affiche alors automatiquement en haut du texte, juste sous le titre.</p>
+
+  <p>Dans Spotify, sur le morceau (ou la playlist/l'album) souhaité : clique sur <strong style="color:var(--accent-bright); font-weight:600;">Partager</strong> → <strong style="color:var(--accent-bright); font-weight:600;">Copier le lien</strong>. Colle ce lien tel quel dans le champ <code>spotify</code> du texte, dans <code>data/textes.js</code> :</p>
+
+  <div class="code-block"><pre>spotify: <span class="str">"https://open.spotify.com/track/xxxxxxxxxxxxxxxxxx"</span>,</pre></div>
+
+  <div class="callout"><strong>À noter —</strong> laisse ce champ vide (<code>""</code>) si tu ne veux pas de lecteur pour un texte donné. Aucune inscription ni clé d'accès n'est nécessaire : c'est le lecteur public de Spotify, le même que celui qu'on retrouve intégré sur d'autres sites.</div>
+
+  <h2><span class="num">VII.</span> Publier</h2>
   <p>Une fois le fichier enregistré, ouvre simplement <code>index.html</code> dans un navigateur pour vérifier le rendu. Pour le mettre en ligne comme les autres fiches (sur GitHub Pages), il suffit d'envoyer l'ensemble du dossier dans un dépôt GitHub, exactement comme pour les fiches de personnage existantes.</p>
 
   <div class="callout"><strong>Rien d'autre à toucher —</strong> les pages <code>index.html</code>, <code>lire.html</code> et le style se mettent à jour automatiquement à partir de <code>data/textes.js</code>. Il n'y a jamais besoin de créer une nouvelle page pour un nouveau texte.</div>
