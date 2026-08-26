@@ -204,7 +204,9 @@
     var audioHtml = texte.spotify
       ? '<div class="reader-audio fade-in">' +
           '<p class="reader-audio-label">En l\'écrivant, j\'écoutais</p>' +
-          '<iframe src="' + escapeHtml(spotifyEmbedUrl(texte.spotify)) + '" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' +
+          '<div class="reader-audio-inner">' +
+            '<iframe src="' + escapeHtml(spotifyEmbedUrl(texte.spotify)) + '" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' +
+          "</div>" +
         "</div>"
       : "";
 
@@ -222,7 +224,7 @@
       : "<span></span>";
     footerHtml += "</div>";
 
-    root.innerHTML = headerHtml + audioHtml + bannerHtml + bodyHtml + footerHtml;
+    root.innerHTML = headerHtml + bannerHtml + audioHtml + bodyHtml + footerHtml;
   }
 
   document.addEventListener("DOMContentLoaded", function () {
