@@ -196,4 +196,55 @@ window.TEXTES = [
     `,
   },
 
+  /* ------------------------------------------------------------------
+     EXEMPLE 1 — un texte lié à un personnage
+     Duplique ce bloc { ... } pour créer une nouvelle entrée.
+     ------------------------------------------------------------------ */
+  {
+    // Identifiant unique, sans espace ni accent (sert dans l'URL).
+    id: "ruzena-muirenn",
+
+    // Titre affiché en grand.
+    titre: "Deathscroll.",
+
+    // Petite citation en italique, affichée sous le titre (facultatif).
+    epigraphe: "In my bedsheets, now wet / Of Her, I pray to forget",
+
+    // Catégorie : "Alba", "Muirenn", "Mordren", "Marcus" ou "Autre".
+    personnage: "Muirenn",
+
+    // Date affichée (peut être une date in-universe ou réelle).
+    date: "Au 14/10/2026",
+
+    // Résumé court affiché sur la carte, dans la bibliothèque.
+    resume: "Moins qu'un souvenir, plus qu'une amie.",
+
+    // Image bandeau (facultative). Laisser vide ("") si tu n'en as pas :
+    // une simple initiale élégante sera affichée à la place.
+    image: "images/ruzena.jpg",
+
+    spotify: "https://open.spotify.com/intl-fr/track/4ShVovnLIlObG43vwaCRkJ?si=d2c6aac8d44b463d",
+
+    // Corps du texte. S'écrit en HTML simple : un paragraphe = une
+    // ligne <p>...</p>. Voir guide.html pour la liste complète des
+    // balises utilisables (italique, citation, séparateur...).
+    contenu: `<p>Deathscroll.</p>
+<p>À l'époque, l'écoute du parchemin des morts était comme une séance de torture pour Muirenn. Il y avait éveillé son sceau, lors de sa première année, très tôt. Il se souvenait encore avec émotion des morts de cette fois-là. Chaque nom avait laissé une marque, une entaille dans la chair tendre et douce de son cerveau. Mais il y avait des noms qui brûlaient plus que d'autres. Ivy, au retour de Lorianth : il avait eu la sensation d'être écartelé vivant, fendu comme une bûche qu'on destinait au brûloir.</p>
+<p>D'autres, il les avait vus mourir sans pouvoir agir. Il avait encore des nausées à la vue de la gorge tranchée d'Alexander, sur Malekys. Parfois, il cauchemardait du regard d'Oaly alors qu'on sacrifiait le jeune homme, ce regard extatique, euphorique, dévoué.</p>
+<p>Son content de morts, il l'avait eu. Autant les cadets que les Poroméens, les Malekysiens opposés à eux sur les îles, les mercenaires qui les avaient embusqués sur leur bateau alors qu'ils partaient porter secours à Alva, Elémiah, et tant d'autres.</p>
+<p>Bref, quand il s'agissait de voir mourir, Muirenn estimait avoir eu son content de désespoir pour plusieurs vies. Aujourd'hui, Kyara était morte ou disparue, Leysa rendue folle par la mort d'Ivan, et les noms de ceux qui s'en étaient allés se comptaient par dizaines.</p>
+<p>Et pourtant, il y avait un nom que Muirenn ne citait jamais. Un nom qu'il avait chassé de ses pensées, car l'évoquer seulement le poussait dans un abîme noir, un cercle obscur de désespoir qui ruinait sa santé. Il repensait à Ivy parce que les souvenirs d'elle lui donnaient la force de continuer d'avancer. Il repensait à Kyara parce qu'il nourrissait l'espoir secret que quelque part en Navarre, elle se bat toujours. Elle, il taisait son nom.</p>
+<p>Elle était comme ses souvenirs de sa vie d'avant, comme ses sœurs et sa petite nièce, comme les cadavres du Battage et les gens qui avaient chu sur le Parapet. Enfoui, loin au fond de lui. Qui était-elle ? Comment s'étaient-ils rencontrés tous les deux ? Avaient-ils seulement vécu ensemble ou bien tout n'était qu'un rêve lointain qu'il fallait laisser là où il était ? S'il est facile de reconnaître qu'il n'y a qu'une très fine frontière entre être un souvenir et être un fantôme, la jeune femme qui habitait les nuits d'insomnie de Muirenn semblait danser sur la ligne avec adresse.</p>
+<p>Il semblait incapable de l'évoquer. Comme si son nom, son image, son empreinte dans l'air, dans les conversations, dans les espaces qu'il visitait de son corps creux pouvaient la ramener à un état de demi-vie. Avec la peur que sa vision provoque l'effondrement du pantin-Muirenn, de la marionnette qui faisait semblant de vivre, ses fils dansant pitoyablement pour faire oublier qu'il n'était plus le même depuis qu'elle était partie.</p>
+<p>Comment avait-elle trouvé la mort ? S'il en faisait l'effort, il se rappellerait son absence, et l'annonce de sa mort dans la cour froide de l'Académie. Mais de son départ, d'elle, de ses doigts chauds entre les siens, de son rire qui perlait comme venu du ciel… Non, ça, c'était parti dans le vent. Parti avec Ivy, parti avec Kyara, avec le regard d'Alexander et l'odeur de la cervelle de ce mercenaire étalé sur le pont du bateau.</p>
+<p>Avait-elle totalement disparu pour lui, pour autant ? Il n'arrivait plus à prononcer son nom, encore moins à ranimer son image. Mais elle était là encore en lui. Quand il parlait avec enthousiasme de la Paix qu'il désirait voir régner sur le cœur de tous les hommes. Quand il placardait ses placards interdits, quand il distribuait ses pamphlets manuscrits sur l'idée d'un monde meilleur.</p>
+<p>Elle existait encore, et son image avait rejoint celles de ceux qui le protégeaient. Là, dans son palais mental, des Femmes gardaient l'entrée de son esprit, chassant ses propres pensées noires. Elles étaient ses Gardiennes, ses Saintes, ses Muses et ses Piliers. Elles étaient l'image qu'en gardait le garçon, qu'il faisait vivre dans sa tête. En retour, elles existaient pour le garder en vie face à ses plus grands adversaires : Renoncement, Découragement, Haine et Amertume.</p>
+<p>Aujourd'hui, le parchemin des morts blessait toujours l'âme pure du pacifiste. Il entaillait son cerveau, mais ne pouvait plus racler profondément à coups de remords et de tristesse. Il ne s'était pas endurci : il s'était fabriqué des idoles silencieuses. Il pensait à elles, à ces images, plutôt qu'aux souvenirs qui les avaient générées, par peur de se faire mal. Et parfois dans son lit, endormi, son corps, attaqué par la journée, se relâchait. Et sans se réveiller, il pleurait.</p>
+<p>Pas d'un joli pleur, pas de larmes silencieuses et belles. Il pleurait comme une lourde averse sur un sol de poussière, avec poids et gravité, des torrents de sanglots qui se mêlaient à la morve de son nez, qui crispaient ses traits horriblement, et déformaient son visage. Il pleurait comme on pleure quand on souffre vraiment. En sanglotant et gémissant, en criant tout bas.</p>
+<p>« — Ruzena, pleurait-il. Ruzena, petite rose, de toutes les fleurs… Reviens. »</p>
+<p>Mais Muirenn eut beau appeler, seul le matin revint. Le même matin gris et éternel. Et dans la cour de Basgiath, déjà, on lisait le parchemin des morts.</p>
+
+    `,
+  },
+
 ];
