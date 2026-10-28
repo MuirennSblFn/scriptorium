@@ -1,0 +1,222 @@
+/* Scriptorium — page "Écrire" */
+
+.admin {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 24px 100px;
+}
+
+.panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 28px;
+  margin-bottom: 28px;
+}
+
+.panel h2,
+.panel summary {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  margin: 0 0 18px;
+  cursor: default;
+}
+
+.panel summary {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+details[open] > summary {
+  margin-bottom: 14px;
+}
+
+.hint {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-faint);
+  margin: 0 0 16px;
+}
+
+.hint code {
+  color: var(--accent-bright);
+}
+
+.admin label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.admin input[type="text"],
+.admin input[type="password"],
+.admin input[type="file"],
+.admin select,
+.admin textarea {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 17px;
+  letter-spacing: 0;
+  text-transform: none;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color 0.25s ease;
+}
+
+.admin textarea {
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.admin input:focus,
+.admin select:focus,
+.admin textarea:focus {
+  border-color: var(--border-strong);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.btn {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--accent-bright);
+  border: 1px solid var(--accent-bright);
+  border-radius: var(--radius);
+  padding: 12px 22px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover { opacity: 0.85; }
+.btn:disabled { opacity: 0.4; cursor: wait; }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: var(--border-strong);
+}
+
+.btn-small {
+  padding: 7px 14px;
+  font-size: 11px;
+}
+
+.status {
+  display: none;
+  font-family: var(--font-ui);
+  font-size: 13.5px;
+  line-height: 1.6;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--accent-wash);
+  color: var(--text);
+}
+
+.status.show { display: block; }
+.status.error { border-color: #a4453f; color: #e8b4af; background: rgba(164, 69, 63, 0.1); }
+.status.ok { border-color: var(--accent); }
+
+.image-preview img {
+  max-height: 110px;
+  border: 1px solid var(--border);
+  margin-top: 4px;
+}
+
+.preview {
+  margin-top: 30px;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+
+.preview .reader-body {
+  padding-top: 20px;
+}
+
+.preview h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  margin: 24px 0 8px;
+}
+
+.preview .reader-epigraph {
+  text-align: center;
+}
+
+.items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.items li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.items li:last-child { border-bottom: none; }
+
+.items .it-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+}
+
+.items .it-meta {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-top: 3px;
+}
+
+.items .it-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.empty {
+  color: var(--text-faint);
+  font-family: var(--font-ui);
+  font-size: 13px;
+}
+
+@media (max-width: 640px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .panel { padding: 22px 18px; }
+}

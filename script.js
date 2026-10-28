@@ -7,7 +7,18 @@
 (function () {
   "use strict";
 
-  var TEXTES = (window.TEXTES || []).slice().reverse(); // plus récents en premier
+  var TEXTES = []; // rempli au démarrage : textes.js + publications.json (plus récents en premier)
+
+  // Charge les textes publiés depuis la page admin (data/publications.json).
+  // En cas d'échec (hors ligne, fichier absent...), le site fonctionne
+  // simplement avec data/textes.js.
+  function loadPublications() {
+    if (!window.fetch) return Promise.resolve([]);
+    return fetch("data/publications.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (list) { return Array.isArray(list) ? list : []; })
+      .catch(function () { return []; });
+  }
 
   // Les seules catégories possibles. L'ordre ici est l'ordre d'affichage
   // des filtres dans la bibliothèque.
@@ -228,8 +239,11 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    initProgressBar();
-    initLibrary();
-    initReader();
+    loadPublications().then(function (published) {
+      TEXTES = (window.TEXTES || []).concat(published).reverse();
+      initProgressBar();
+      initLibrary();
+      initReader();
+    });
   });
 })();

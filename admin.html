@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Écrire — Scriptorium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">❦</span>
+    Scriptorium
+    <small>Écrire</small>
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">Bibliothèque</a>
+    <a href="admin.html" class="active">Écrire</a>
+  </nav>
+</header>
+
+<main class="admin">
+
+  <div id="status" class="status" role="status"></div>
+
+  <!-- Connexion -->
+  <details class="panel" id="settings-panel" open>
+    <summary>Connexion à GitHub</summary>
+    <p class="hint">À remplir une seule fois : ces informations restent uniquement dans ton navigateur. Le jeton est créé dans GitHub (voir le pas-à-pas fourni avec le site) et ne doit jamais être partagé.</p>
+    <div class="grid-2">
+      <label>Compte GitHub<input type="text" id="cfg-owner" value="muirennsblfn"></label>
+      <label>Dépôt<input type="text" id="cfg-repo" value="scriptorium"></label>
+      <label>Branche<input type="text" id="cfg-branch" value="main"></label>
+      <label>Jeton d'accès<input type="password" id="cfg-token" placeholder="github_pat_..." autocomplete="off"></label>
+    </div>
+    <div class="actions">
+      <button type="button" class="btn" id="btn-connect">Enregistrer et se connecter</button>
+      <button type="button" class="btn btn-ghost" id="btn-forget">Oublier le jeton</button>
+    </div>
+  </details>
+
+  <!-- Éditeur -->
+  <section class="panel" id="editor">
+    <h2 id="editor-title">Nouveau texte</h2>
+
+    <div class="grid-2">
+      <label>Titre<input type="text" id="f-titre"></label>
+      <label>Personnage
+        <select id="f-perso">
+          <option>Alba</option><option>Muirenn</option><option>Mordren</option><option>Marcus</option><option>Autre</option>
+        </select>
+      </label>
+      <label>Date affichée<input type="text" id="f-date"></label>
+      <label>Épigraphe (facultatif)<input type="text" id="f-epigraphe"></label>
+    </div>
+
+    <label>Résumé (affiché sur la carte)<textarea id="f-resume" rows="2"></textarea></label>
+
+    <div class="grid-2">
+      <label>Lien Spotify (facultatif)<input type="text" id="f-spotify" placeholder="https://open.spotify.com/..."></label>
+      <label>Image (facultatif)<input type="file" id="f-image-file" accept="image/*"></label>
+    </div>
+    <div class="grid-2">
+      <label>…ou chemin d'une image déjà envoyée<input type="text" id="f-image" placeholder="images/mon-image.jpg"></label>
+      <div id="image-preview" class="image-preview"></div>
+    </div>
+
+    <label>Texte
+      <textarea id="f-texte" rows="18" placeholder="Écris ou colle ton texte ici. Un paragraphe par ligne (ou séparés par une ligne vide). *italique*, **gras**, et une ligne contenant seulement *** ou --- pour un séparateur."></textarea>
+    </label>
+
+    <div class="actions">
+      <button type="button" class="btn" id="btn-publish">Publier</button>
+      <button type="button" class="btn btn-ghost" id="btn-preview">Aperçu</button>
+      <button type="button" class="btn btn-ghost" id="btn-cancel" hidden>Annuler la modification</button>
+    </div>
+
+    <div id="preview" class="preview" hidden></div>
+  </section>
+
+  <!-- Liste -->
+  <section class="panel">
+    <h2>Textes publiés depuis cette page</h2>
+    <p class="hint">Les textes ajoutés directement dans <code>data/textes.js</code> n'apparaissent pas ici : ils restent modifiables à la main.</p>
+    <ul id="items" class="items"></ul>
+  </section>
+
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>
